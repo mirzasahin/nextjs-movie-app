@@ -12,15 +12,15 @@ const ThemeComp = () => {
   }, []);
 
   const themeMode = theme === 'system' ? systemTheme : theme;
-  console.log(themeMode, 'themeMode kardeş');
 
   return (
     <div>
     {
       mounted && (
         themeMode === 'dark' ?
-      <MdDarkMode onClick={() => setTheme('light')} className="cursor-pointer" size={25} /> :
-      <MdLightMode onClick={() => setTheme('dark')} className="cursor-pointer" size={25} />
+        <MdLightMode onClick={() => setTheme('light')} className="cursor-pointer" size={25} /> :
+      <MdDarkMode onClick={() => setTheme('dark')} className="cursor-pointer" size={25} /> 
+      
       )
     }
     </div>
