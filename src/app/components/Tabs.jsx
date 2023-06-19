@@ -6,10 +6,11 @@ import {useSearchParams} from 'next/navigation'
 const Tabs = () => {
     const searchParams = useSearchParams()
     const genre = searchParams.get('genre')
+    console.log(genre);
 
     const tabs = [
         {
-            name: "En Popüler",
+            name: "Popular",
             url: "popular"
         },
         {
@@ -17,7 +18,7 @@ const Tabs = () => {
             url: "top_rated"
         },
         {
-            name: "Yakında Gelecekler",
+            name: "Upcoming",
             url: "upcoming"
         }
     ]
