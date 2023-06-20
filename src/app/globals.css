@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.absolute {
+.card {
     width: 400px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
